@@ -1,0 +1,72 @@
+<!--  Jag har en del olika html sidor för jag vill att man ska kunna komma vidare till en annan sida där man kan läsa mer om tex "mina services" men också för att man ska kunna komma in på en specifik bild eller video så man kan se den tydligare. Därför kommer jag inte kommentera så mycket på varje HTML sida eftersom inprincip varje sida har samma uppbyggnad som min index sida jag bara kopierat in för att spara tid.  -->   
+
+<!-- Precis samma sak som på "läskampensida.html" med en "div class=row" och två column tags under med två bilder brevid varandra -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="This is a website that shows my portfolio">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>My Graphic Gesign Portfolio Website</title>
+	<link rel="icon" href="material/favicon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="stylemkvposter.css">
+	<script src="https://kit.fontawesome.com/f8eb96def3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+	<div class="container">
+		<nav>
+			<img src="material/logo1.png" alt="logo1" class="logo">
+			<img src="material/logo2.png" alt="logo2" class="logo">
+			<ul id="sidemenu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html">About me</a></li>
+				<li><a href="myservicessida.html">Services</a></li>
+				<li><a href="myportfoliosida.html">Portfolio</a></li>
+				<li><a href="index.html">Contact</a></li>
+				<li><i class="fas fa-times" onclick="closemenu()"></i>
+			</ul>
+			<img src="material/sun.png" alt="lightmodesun" id="icon">
+			<i class="fas fa-bars" onclick="openmenu()"></i>
+		</nav>
+<div class="row">
+  <div class="column">
+    <img src="material/myworkbilder/work-7.jpg" alt="pizzabild1" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="material/myworkbilder/work-8.png" alt="pizzabild2" style="width:100%">
+  </div>
+</div>
+
+</div>
+		<a href="myportfoliosida.html" class="btn">Back to portfolio</a>
+	</div>
+
+
+
+
+<script>
+
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+    	document.body.classList.toggle("dark-theme");
+    	if(document.body.classList.contains("dark-theme")){
+    		icon.src = "material/moon.png";
+    	}else{
+    		icon.src = "material/sun.png";
+    	}
+    }
+
+</script>	
+
+<script>
+  	function lastedit (){
+  		var latestDate = new Date(document.lastModified);
+  		document.getElementById("placeholder").innerHTML = latestDate
+  	}
+  </script>
+</body>
+</html>
