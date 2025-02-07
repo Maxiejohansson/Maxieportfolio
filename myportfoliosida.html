@@ -1,0 +1,180 @@
+<!--  Jag har en del olika html sidor för jag vill att man ska kunna komma vidare till en annan sida där man kan läsa mer om tex "mina services" men också för att man ska kunna komma in på en specifik bild eller video så man kan se den tydligare. Därför kommer jag inte kommentera så mycket på varje HTML sida eftersom inprincip varje sida har samma uppbyggnad som min index sida jag bara kopierat in för att spara tid.  -->   
+
+<!--  På den här sidan har jag lagt in koden ifrån de tre bilderna jag hade i min portfolio sektion. Men jag har koppierat den en gång så jag har 6 bilder efter varandra istället för bara 3. Precis som i den sektionen så har jag en "div class=layer" tag i varje bild så man fortfarande kan få upp färgoverlayen och texten över bilderna. Sen har jag fortfarande "fas fa" symbolen som är länkat till en ny html sida för varje bild  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="This is a website that shows my portfolio">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>My Graphic Gesign Portfolio Website</title>
+	<link rel="icon" href="material/favicon.png" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@100..700&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styleportfolio.css">
+	<script src="https://kit.fontawesome.com/f8eb96def3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="material/logo1.png" alt="logo1" class="logo">
+            <img src="material/logo2.png" alt="logo2" class="logo">
+            <ul id="sidemenu">
+	              <li><a href="index.html">Home</a></li>
+	              <li><a href="index.html">About me</a></li>
+		            <li><a href="myservicessida.html">Services</a></li>
+		            <li><a href="#portfolio">Portfolio</a></li>
+		            <li><a href="index.html">Contact</a></li>
+		            <li><i class="fas fa-times" onclick="closemenu()"></i>
+	          </ul> 
+	          <img src="material/sun.png" alt="lightmodesun" id="icon">
+	          <i class="fas fa-bars" onclick="openmenu()"></i>
+	      </nav>
+            <div id="services">
+	            <div class="container">
+                 <div id="portfolio">
+	                   <div class="container">
+	                       <h1 class="sub-title">My Work</h1>
+	                       <div class="work-list">
+	                           <div class="work">
+				                         <img src="material/myworkbilder/work-2.png" alt="mywork1">
+				                         <div class="layer">
+					                           <h3>Digital Creative Photo collage</h3>
+					                           <p>A school project that was about making a photo poster collage with animation that should represent things
+					                           that i like and think about</p>
+					                           <a href="digitalcollagesida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/bild2.png" alt="mywork2">
+				                         <div class="layer">
+					                           <h3>Poster for MKV Programdag 2022</h3>
+					                           <p>Did this poster for my universities program day. My university had a competition who could make the 
+					                           best poster for that event, and this poster that i've made was the winner.</p>
+					                           <a href="mkvpostersida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/work-3s.png" alt="mywork3">
+				                         <div class="layer">
+					                           <h3>Blixtens Pizzeria Logo Design</h3>
+					                           <p>A project that was about creating a unique logo design of a made up business or already existing business. 
+					                           For this i choose to make one for a pizza restaurant that i call "BLIXTENS PIZZERIA" or Lightning Pizza.</p>
+					                           <a href="pizzalogosida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/work-4.jpg" alt="mywork4">
+				                         <div class="layer">
+					                           <h3>Poster for Läskampen</h3>
+					                           <p>This project was about making and planning for an event that would encourage children to read more.
+                                               <br><br> This is the poster i designed for the event.</p>
+					                           <a href="leskampensida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/work-5.jpg" alt="mywork5">
+				                         <div class="layer">
+					                           <h3>Lindt chocolate branding redesign</h3>
+					                           <p>In this project we got the assignment to do a made up redesign of Lindt chocolates branding and do a short commercial video on any platform. I was in charge of making the new design of the posters, mockups, animation and both commercial videos you can see right here.</p>
+					                           <a href="lindtvideosida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/work-6.jpg" alt="mywork6">
+				                         <div class="layer">
+					                           <h3>Mental Lockdown short film</h3>
+					                           <p>Short movie about covid-19 and how it effects peoples mental state - 
+					                           A man in his youth lives alone in the current pandemic. He struggles with his mental state, which worsens when he constantly compares his present with memories and moments from a happier time.</p>
+					                           <a href="mentallockdownsida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                        <div class="work">
+				                         <img src="material/myworkbilder/work-8.png" alt="mywork8">
+				                         <div class="layer">
+					                           <h3>Staden Munktell concept poster</h3>
+					                           <p>A concept poster for a location in Eskilstuna called Munktell. The purpose of the poster is 
+					                           to represent a central place in Eskilstuna in an informative and inspiring way.</p>
+					                           <a href="munktellsida.html"><i class="fas fa-external-link-alt"></i></a>
+				                         </div>
+			                       </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/testtest1.png" alt="mywork11">
+				                         <div class="layer">
+					                           <h3>Justforthewin concept flyer</h3>
+					                           <p>Concept for a event flyer for Justforthewin.</p>
+					                           <a href="justforthewinsida.html"><i class="fas fa-external-link-alt"></i></a>
+					                     </div>
+					                </div>
+			                       <div class="work">
+				                         <img src="material/myworkbilder/work-11.png" alt="mywork11">
+				                         <div class="layer">
+					                           <h3>Creative graphic design magazine concept</h3>
+					                           <p>A concept of a creative graphic design magazine</p>
+					                           <a href="magazinesida.html"><i class="fas fa-external-link-alt"></i></a>
+					                     </div>     
+			                       </div>
+			                      <div class="work">
+				                        <img src="material/myworkbilder/work-14.png" alt="mywork14">
+				                        <div class="layer">
+					                          <h3>Book cover concept of the book "Drawing Ideas" by Mark Baskinger and William Bardel</h3>
+					                          <p>This is a concept of a Swedish version of the book Drawing Ideas. The book is about how-to primer for design professionals for creating compelling and original concept designs through drawing by hand.</p>
+					                          <a href="bookcoversida.html"><i class="fas fa-external-link-alt"></i></a> 
+					                     </div>     
+			                       </div>
+			                      <div class="work">
+				                        <img src="material/myworkbilder/muse1.jpg" alt="mywork14">
+				                        <div class="layer">
+					                          <h3>Information sign for one of the machines at Eskilstuna City Museum</h3>
+					                          <p>This sign is intended to provide information about one of the machines in the museum. Both technically how it works but also to describe what the working conditions were like during that time.</p>
+					                          <a href="fridabooksida.html"><i class="fas fa-external-link-alt"></i></a> 
+					                     </div>     
+			                       </div>
+		                     </div>
+		                     <a href="index.html" class="btn">Back to website</a>
+	                   </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+
+
+
+<script>
+
+	var sidemeu = document.getElementById("sidemenu");
+
+	function openmenu(){
+		sidemeu.style.right = "0";
+	}
+	function closemenu(){
+		sidemeu.style.right = "-200px";
+	}
+
+</script>
+
+<script>
+
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+    	document.body.classList.toggle("dark-theme");
+    	if(document.body.classList.contains("dark-theme")){
+    		icon.src = "material/moon.png";
+    	}else{
+    		icon.src = "material/sun.png";
+    	}
+    }
+
+</script>
+		
+<script>
+  	function lastedit (){
+  		var latestDate = new Date(document.lastModified);
+  		document.getElementById("placeholder").innerHTML = latestDate
+  	}
+  </script>
+</body>
+</html>
